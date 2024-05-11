@@ -79,6 +79,15 @@ return {
             init_options = {
                 bundles = bundles,
             },
+
+            handlers = {
+                ['language/status'] = function(_, result)
+                    -- Print or whatever.
+                end,
+                ['$/progress'] = function(_, result, ctx)
+                    -- disable progress updates.
+                end,
+            },
            
             vim.keymap.set("n", "<leader>ca", "<Cmd>lua vim.lsp.buf.code_action()<CR>");
             vim.keymap.set("n", "<leader>gd", "<Cmd>lua vim.lsp.buf.definition()<CR>");
