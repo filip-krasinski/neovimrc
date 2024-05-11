@@ -5,7 +5,7 @@ return {
     },
 
 
-    --"github/copilot.vim",
+    "github/copilot.vim",
     {
         "eandrju/cellular-automaton.nvim",
         config = function()
