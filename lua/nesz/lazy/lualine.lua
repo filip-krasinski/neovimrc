@@ -4,8 +4,10 @@ return {
    init = function()
         require('lualine').setup({
             options = {
-                theme = 'horizon'
-            }
+                theme = 'horizon',
+                component_separators = { left = '', right = ''},
+                section_separators = { left = '', right = ''},
+            },
         })
     end
 }

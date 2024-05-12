@@ -92,6 +92,8 @@ return {
             vim.keymap.set("n", "<leader>ca", "<Cmd>lua vim.lsp.buf.code_action()<CR>");
             vim.keymap.set("n", "<leader>gd", "<Cmd>lua vim.lsp.buf.definition()<CR>");
             vim.keymap.set("n", "<leader>gi", "<Cmd>lua vim.lsp.buf.implementation()<CR>");
+            vim.keymap.set("n", "<leader>gr", "<Cmd>lua vim.lsp.buf.references()<CR>");
+            vim.keymap.set("n", "<leader>rn", "<Cmd>lua vim.lsp.buf.rename()<CR>");
 
             vim.keymap.set("n", "<leader>oi", "<Cmd>lua require'jdtls'.organize_imports()<CR>");
             vim.keymap.set("n", "<leader>ev", "<Cmd>lua require('jdtls').extract_variable()<CR>");
